@@ -1,0 +1,56 @@
+
+td  > a  > img{
+     width: 35px;
+     height: 35px;
+}
+
+
+/* formats for navbar */
+ .navbar { padding: 0px 0px; min-height:40px;   }
+ .navbar .navbar-brand{ padding: 3px 0px;font-size: 16px;line-height: 20px;height: 40px; }
+ .navbar .navbar-brand > img{ width: 94px; height: 40px; }
+ .navbar .navbar-nav > li > a {  padding-top: 0px; padding-bottom: 0px; line-height: 40px; }
+ .navbar .navbar-toggle {  margin-top: 3px; margin-bottom: 0px; padding: 8px 9px; }
+ .navbar .navbar-form { margin-top: 2px; margin-bottom: 0px }
+ .navbar .navbar-collapse {border-color: #A40303;}
+
+ body {
+  padding-top: 5rem;
+}
+
+/*Column Highlighting*/
+/*table {
+    overflow: hidden;
+}
+
+td, th {
+    position: relative;
+}
+td:hover::after,
+th:hover::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0,0,0,0.075);
+    left: 0;
+    top: -5000px;
+    height: 10000px;
+    width: 100%;
+    z-index: -1;
+}*/
+
+.table {
+    margin-bottom: 2rem
+}
+
+td.tdOdd {
+	background-color:#ACD1FB;	
+	text-align: center; 
+    width: 14%;
+}
+
+td.tdEven {
+	background-color:#DEEDFE;
+	text-align: center; 
+    width: 14%;
+}
+
