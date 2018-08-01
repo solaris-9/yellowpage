@@ -33,6 +33,9 @@ $( document ).ready(function() {
         // populate the tables
         var str = '';
         for(var i = 0 ; i < json.length; i++) {
+            if (json[i].type == 'nav') {
+                continue;
+            }
             str += newTableHead.replace(/__SECTION__/g, json[i].name);
             for (var j = 0; j < json[i].urls.length; j++) {
                 if ( (j % 7) % 2 == 0) {

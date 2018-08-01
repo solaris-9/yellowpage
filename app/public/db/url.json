@@ -1,7 +1,33 @@
 [
   {
+    "name": "Navbar",
+    "type": "nav",
+    "urls": [
+      {
+        "name": "Google",
+        "url": "http://www.google.com"
+      },
+      {
+        "name": "EE Cloud",
+        "url": "http://hz-dc-os-ohn-12.eecloud.nsn-net.net/"
+      },
+      {
+        "name": "log5G",
+        "url": "http://10.182.44.97:5000/log5g.html"
+      },
+      {
+        "name": "Google",
+        "url": "http://www.google.com"
+      },
+      {
+        "name": "Google",
+        "url": "http://www.google.com"
+      }
+    ]
+  },
+  {
     "name": "Section-1",
-    "desc": "Section-1",
+    "type": "body",
     "urls": [
       {
         "name": "Google",
@@ -62,12 +88,17 @@
         "name": "Baidu",
         "url": "http://baidu.com/",
         "added": "dzeng"
+      },
+      {
+        "name": "Baidu",
+        "url": "http://baidu.com/",
+        "added": "dzeng"
       }
     ]
   },
   {
     "name": "Section-2",
-    "desc": "Section-2",
+    "type": "body",
     "urls": [
       {
         "name": "Google",
