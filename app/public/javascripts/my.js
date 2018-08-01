@@ -9,7 +9,7 @@ for (var i = 0; i <=2; i++) {
 }
 newTableRow += '</tr>';*/
 
-var addIcon = '<a href="#" data-toggle="modal" data-target="#myModal"><img src="/images/add.02.png"></a>';
+var addIcon = '<a id="__SECTION__" href="#" data-toggle="modal" data-target="#myModal"><img src="/images/add.02.png"></a>';
 var newTableRow = ' <tr> \
                     <td class="tdOdd">__ADDICON__</td> \
                     <td class="tdEven"></td><td class="tdOdd"></td> \
@@ -47,19 +47,19 @@ $( document ).ready(function() {
             var rem = (j-1) % 7;
             switch (rem) {
                 case 6:
-                    str += newTableRow.replace('__ADDICON__', addIcon);
+                    str += newTableRow.replace('__ADDICON__', addIcon.replace(/__SECTION__/g, json[i].name));
                     break;
                 default:
                     for (var k = 0; k < 6-rem; k++) {
                         if ( (rem + k) % 2 == 1 ) {
                             if (k == 0) {
-                                str += '<td class="tdOdd">' + addIcon + '</td>';
+                                str += '<td class="tdOdd">' + addIcon.replace(/__SECTION__/g, json[i].name) + '</td>';
                             } else {
                                 str += '<td class="tdOdd"></td>';
                             }
                         } else {
                             if (k == 0) {
-                                str += '<td class="tdEven">' + addIcon + '</td>';
+                                str += '<td class="tdEven">' + addIcon.replace(/__SECTION__/g, json[i].name) + '</td>';
                             } else {
                                 str += '<td class="tdEven"></td>';
                             }
@@ -76,7 +76,7 @@ $( document ).ready(function() {
 });
 
 
-$('#exampleModal').on('show.bs.modal', function (event) {
+$('#myModal').on('show.bs.modal', function (event) {
   //console.log('modal is shown')
   target = $(event.relatedTarget) // Button that triggered the modal
   console.log("DEBUG: The modal was called by: " + target[0].id)
@@ -114,11 +114,11 @@ $("#form1").submit(function(e) {
             pElement.innerHTML = '<a href="' + urlVal + '">' + tagVal + '</a>';
             //TODO: move add icon to next sibling
             if(pElement.nextSibling) {
-                pElement.nextSibling.innerHTML = addIconHtml;
+                pElement.nextElementSibling.innerHTML = addIconHtml;
             } else {
                 // TODO: add a new table row
                 // td -> tr -> tbody
-                pElement.parentElement.parentElement.innerHTML += newTableRow;
+                pElement.parentElement.parentElement.innerHTML += newTableRow.replace('__ADDICON__', addIcon.replace(/__SECTION__/g, sectionVal));
             }
             
             //hide the modal
