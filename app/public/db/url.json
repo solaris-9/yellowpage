@@ -4,23 +4,31 @@
     "type": "nav",
     "urls": [
       {
-        "name": "Google",
+        "name": "HR Portal",
         "url": "http://www.google.com"
       },
       {
-        "name": "EE Cloud",
+        "name": "e-Workplace",
         "url": "http://hz-dc-os-ohn-12.eecloud.nsn-net.net/"
       },
       {
-        "name": "log5G",
+        "name": "NSB-IT",
         "url": "http://10.182.44.97:5000/log5g.html"
       },
       {
-        "name": "Google",
+        "name": "Success4U",
         "url": "http://www.google.com"
       },
       {
-        "name": "Google",
+        "name": "SNOW",
+        "url": "http://www.google.com"
+      },
+      {
+        "name": "X500",
+        "url": "http://www.google.com"
+      },
+      {
+        "name": "Meeting-Room",
         "url": "http://www.google.com"
       }
     ]
@@ -68,11 +76,6 @@
       {
         "name": "GoogleD",
         "url": "http://www.google.com"
-      },
-      {
-        "name": "Baidu",
-        "url": "http://baidu.com/",
-        "added": "dzeng"
       },
       {
         "name": "Baidu",
@@ -156,9 +159,9 @@
         "added": "dzeng"
       },
       {
-        "name": "Baidu",
-        "url": "http://baidu.com/",
-        "added": "dzeng"
+        "name": "google",
+        "url": "google.com",
+        "added": "solaris_9"
       }
     ]
   }

@@ -26,7 +26,13 @@ var newTableHead = '<table class="table">\
                     </thead>\
                     <tbody class="collapse show" id="collapse__SECTION__"> \
                     <tr>';
-                
+
+const navItem = '<li class="nav-item">\
+                <a class="flex-sm-fill text-sm-center nav-link" href="__NAV_URL__">\
+                    __NAV_TAG__\
+                </a>\
+                </li>';
+                    
 $( document ).ready(function() {
     $.getJSON("/db/url.json", function(json) {
         console.log('DEBUG: 1st URL in the JSON: ' + json[0].urls[0].url)
@@ -34,6 +40,11 @@ $( document ).ready(function() {
         var str = '';
         for(var i = 0 ; i < json.length; i++) {
             if (json[i].type == 'nav') {
+                var navStr = '';
+                for (var m = 0; m < json[i].urls.length; m++) {
+                    navStr += navItem.replace(/__NAV_URL__/, json[i].urls[m].url).replace(/__NAV_TAG__/, json[i].urls[m].name);
+                }
+                $('#navList').html(navStr);
                 continue;
             }
             str += newTableHead.replace(/__SECTION__/g, json[i].name);
