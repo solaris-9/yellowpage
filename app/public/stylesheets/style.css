@@ -54,3 +54,6 @@ td.tdEven {
     width: 14%;
 }
 
+.btn-outline-primary {
+    border-color: transparent;
+}

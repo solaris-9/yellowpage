@@ -28,7 +28,7 @@ var newTableHead = '<table class="table">\
                     <tr>';
 
 const navItem = '<li class="nav-item">\
-                <a class="flex-sm-fill text-sm-center nav-link" href="__NAV_URL__">\
+                <a class="btn btn-outline-primary text-sm-center nav-link" href="__NAV_URL__">\
                     __NAV_TAG__\
                 </a>\
                 </li>';
