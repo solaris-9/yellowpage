@@ -19,14 +19,14 @@ td  > a  > img{
 }
 
 /*Column Highlighting*/
-/*table {
+table {
     overflow: hidden;
 }
 
 td, th {
     position: relative;
 }
-td:hover::after,
+/*td:hover::after,
 th:hover::after {
     content: "";
     position: absolute;
@@ -42,18 +42,28 @@ th:hover::after {
     margin-bottom: 2rem
 }
 
+.table thead th {
+    padding: 0.5rem 0;
+}
+
 td.tdOdd {
-	background-color:#ACD1FB;	
+	background-color: #edeff2;
+    /*background-color:#ACD1FB;*/
 	text-align: center; 
     width: 14%;
 }
 
 td.tdEven {
-	background-color:#DEEDFE;
+	/*background-color:#edeff2;*/
+	/*background-color:#DEEDFE;#edeff2*/
 	text-align: center; 
     width: 14%;
 }
 
 .btn-outline-primary {
+    border-color: transparent;
+}
+
+.btn-outline-success {
     border-color: transparent;
 }

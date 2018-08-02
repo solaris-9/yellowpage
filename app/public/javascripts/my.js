@@ -9,18 +9,18 @@ for (var i = 0; i <=2; i++) {
 }
 newTableRow += '</tr>';*/
 
-var addIcon = '<a id="__SECTION__" href="#" data-toggle="modal" data-target="#myModal"><img src="/images/add.02.png"></a>';
+var addIcon = '<a class="btn btn-outline-primary btn-lg btn-block" id="__SECTION__" href="#" data-toggle="modal" data-target="#myModal"><img src="/images/add.02.png"></a>';
 var newTableRow = ' <tr> \
                     <td class="tdOdd">__ADDICON__</td> \
                     <td class="tdEven"></td><td class="tdOdd"></td> \
                     <td class="tdEven"></td><td class="tdOdd"></td> \
                     <td class="tdEven"></td><td class="tdOdd"></td></tr>';
 
-var newTableHead = '<table class="table">\
+var newTableHead = '<table class="table table-borderless">\
                     <thead>\
                     <tr>\
-                    <th class="bg-primary text-center font-weight-bold text-white" scope="col" colspan="7">\
-                        <a class="btn btn-primary" data-toggle="collapse" href="#collapse__SECTION__" role="button" \
+                    <th scope="col" colspan="7">\
+                        <a class="btn btn-primary btn-lg btn-block" data-toggle="collapse" href="#collapse__SECTION__" role="button" \
                         aria-expanded="true" aria-controls="collapse__SECTION__">__SECTION__</a></th>\
                     </tr>\
                     </thead>\
@@ -28,7 +28,7 @@ var newTableHead = '<table class="table">\
                     <tr>';
 
 const navItem = '<li class="nav-item">\
-                <a class="btn btn-outline-primary text-sm-center nav-link" href="__NAV_URL__">\
+                <a class="btn btn-outline-primary btn-lg text-sm-center nav-link" href="__NAV_URL__">\
                     __NAV_TAG__\
                 </a>\
                 </li>';
@@ -39,6 +39,7 @@ $( document ).ready(function() {
         // populate the tables
         var str = '';
         for(var i = 0 ; i < json.length; i++) {
+            /* Navbar populating */
             if (json[i].type == 'nav') {
                 var navStr = '';
                 for (var m = 0; m < json[i].urls.length; m++) {
@@ -50,9 +51,9 @@ $( document ).ready(function() {
             str += newTableHead.replace(/__SECTION__/g, json[i].name);
             for (var j = 0; j < json[i].urls.length; j++) {
                 if ( (j % 7) % 2 == 0) {
-                    str += '<td class="tdOdd"><a href="' + json[i].urls[j].url + '">' + json[i].urls[j].name + '</a></td>';
+                    str += '<td class="tdOdd"><a class="btn btn-outline-primary btn-block" href="' + json[i].urls[j].url + '">' + json[i].urls[j].name + '</a></td>';
                 } else {
-                    str += '<td class="tdEven"><a href="' + json[i].urls[j].url + '">' + json[i].urls[j].name + '</a></td>';
+                    str += '<td class="tdEven"><a class="btn btn-outline-success btn-block" href="' + json[i].urls[j].url + '">' + json[i].urls[j].name + '</a></td>';
                 }
                 if ( j % 7 == 6) {
                     str += '</tr>';
