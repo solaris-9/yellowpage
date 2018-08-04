@@ -9,13 +9,13 @@
         form#form1(method='post')
           .form-group
             label.col-form-label(for='tag-name') Tag:
-            input#tag-name.form-control(type='text')
+            input#tag-name.form-control(type='text' placeholder='Tag of the link')
           .form-group
             label.col-form-label(for='url-name') URL:
-            input#url-name.form-control(type='text')
+            input#url-name.form-control(type='text' placeholder='http://domain.com')
           .form-group
-            label.col-form-label(for='added-name') Your Name:
-            input#added-name.form-control(type='text')
+            label.col-form-label(for='added-name') Name:
+            input#added-name.form-control(type='text' placeholder='Your nsn-intra ID')
           .modal-footer
             button.btn.btn-secondary(type='button' data-dismiss='modal') Close
             button.btn.btn-primary(type='submit') Save

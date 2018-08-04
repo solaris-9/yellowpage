@@ -14,7 +14,9 @@ html
     body
         include navbar.pug
         |
-        main.container#tables(role='main')
+        .row.flex-xl-nowrap
+            nav.col-1.bd-toc#topics
+            main.container.col-xl-10#tables(role='main')
         include modal.pug
         |
         |
