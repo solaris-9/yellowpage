@@ -4,262 +4,548 @@
     "type": "nav",
     "urls": [
       {
-        "name": "HR Portal",
-        "url": "http://www.google.com"
+        "name": "HR-Portal",
+        "url": "https://hrportal.int.nokia-sbell.com/Default_V2.aspx"
       },
       {
-        "name": "e-Workplace",
-        "url": "http://hz-dc-os-ohn-12.eecloud.nsn-net.net/"
+        "name": "eWorkplace",
+        "url": "http://oa20.int.nokia-sbell.com/Portal/"
       },
       {
         "name": "NSB-IT",
-        "url": "http://10.182.44.97:5000/log5g.html"
+        "url": "https://itservice.int.nokia-sbell.com/"
       },
       {
         "name": "Success4U",
-        "url": "http://www.google.com"
+        "url": "https://extrafed.ext.net.nokia.com/idp/profile/SAML2/Unsolicited/SSO?providerId=www.successfactors.com"
       },
       {
         "name": "SNOW",
-        "url": "http://www.google.com"
+        "url": "https://nsnsi.service-now.com/ess/"
       },
       {
         "name": "X500",
-        "url": "http://www.google.com"
+        "url": "http://directory.app.alcatel-lucent.com/"
       },
       {
         "name": "Meeting-Room",
-        "url": "http://www.google.com"
+        "url": "http://wlsweb.cn.alcatel-lucent.com/mrbs/"
       }
     ]
   },
   {
-    "name": "Section-1",
+    "name": "General",
     "type": "body",
     "urls": [
+      {
+        "name": "Sharenet",
+        "url": "https://sharenet-ims.int.net.nokia.com/livelink/livelink?func=llworkspace"
+      },
+      {
+        "name": "PWC",
+        "url": "https://pwc.int.net.nokia.com/"
+      },
+      {
+        "name": "L3 Members",
+        "url": "https://bts.inside.nsn.com/twiki/bin/view/LTEeNB/CPlaneTeam#C_Plane_LTE_Shanghai_Team"
+      },
+      {
+        "name": "L3 WIKI",
+        "url": "https://nokia.sharepoint.com/sites/airscalel3shard/Wiki/Home.aspx"
+      },
+      {
+        "name": "TWiki",
+        "url": "https://bts.inside.nsn.com"
+      },
+      {
+        "name": "Office 365",
+        "url": "https://portal.office.com/"
+      },
+      {
+        "name": "HR Ticket",
+        "url": "https://nokiahrconnection.custhelp.com/app/ask"
+      },
+      {
+        "name": "CornerStone",
+        "url": "https://nokialearn.csod.com/client/nokialearn/default.aspx"
+      },
+      {
+        "name": "IDM(NIMS)",
+        "url": "https://idm.int.net.nokia.com/IdmGuiWeb/flow/person/globalSearch?execution=e2s1"
+      },
+      {
+        "name": "WebEx",
+        "url": "https://nokiameetings.webex.com/mw3100/mywebex/default.do?siteurl=nokiameetings&amp;service=10"
+      },
+      {
+        "name": "L3 Sharepoint",
+        "url": "https://nokia.sharepoint.com/sites/airscalel3shard"
+      },
+      {
+        "name": "L3 Yammer",
+        "url": "https://www.yammer.com/nokia.com/#/threads/inGroup?type=in_group&feedId=13208554&view=all"
+      },
+      {
+        "name": "MN Sharepoint",
+        "url": "https://nokia.sharepoint.com/MN"
+      },
+      {
+        "name": "L3 LinSEE",
+        "url": "https://nokia.sharepoint.com/sites/airscalel3shard/Wiki/LinSEE%20SHA.aspx"
+      },
+      {
+        "name": "HZ LINSEE",
+        "url": "https://confluence.inside.nsn.com/display/LinSEE/Hangzhou+ASB+environment"
+      },
+      {
+        "name": "SDE Ticket",
+        "url": "http://wlsweb.cn.alcatel-lucent.com/sdeticket/login.php"
+      },
+      {
+        "name": "Ultima",
+        "url": "https://ultima.int.net.nokia.com/"
+      },
+      {
+        "name": "LISTSERV (Obsolete)",
+        "url": "http://list.app.nokia.com/cgi-bin/wa?HOME"
+      },
+      {
+        "name": "EE Cloud",
+        "url": "https://hz-dc-eu-asb-06ui.dynamic.nsn-net.net:8443/"
+      },
+      {
+        "name": "New EE Cloud",
+        "url": "http://hz-dc-os-ohn-12.eecloud.nsn-net.net/"
+      },
+      {
+        "name": "Pronto",
+        "url": "https://pronto.int.net.nokia.com/pronto/home.html"
+      },
+      {
+        "name": "Pronto Improvement",
+        "url": "http://10.182.65.78:8080"
+      },
+      {
+        "name": "Doors",
+        "url": "https://citrixapps.int.net.nokia.com/Citrix/XenApp/site/default.aspx"
+      },
+      {
+        "name": "Aginoodle",
+        "url": "https://lte.aginoodle.emea.nsn-net.net/"
+      },
+      {
+        "name": "Recognition",
+        "url": "https://www.globoforce.net/microsites/t/home?client=nsn&setCAG=true"
+      },
+      {
+        "name": "Achievement Centre",
+        "url": "https://nokia.sharepoint.com/sites/learn/achiev/SitePages/index.aspx"
+      },
+      {
+        "name": "Report Portal",
+        "url": "https://4g-rep-portal.wroclaw.nsn-rdnet.net/dashboard/main/"
+      },
+      {
+        "name": "C-Plane Pronto",
+        "url": "https://prontos.dynamic.nsn-net.net/"
+      },
+      {
+        "name": "Travel Approval",
+        "url": "https://nokia.sharepoint.com/sites/MN_Travel_Request_Pre-Approval/Lists/MN%204GRAN%20Travel%20Request%20PreApproval/AllItems.aspx"
+      },
+      {
+        "name": "OneLab",
+        "url": "https://nok.it/onelab"
+      }
+    ]
+  },
+  {
+    "name": "Development",
+    "type": "body",
+    "urls": [
+      {
+        "name": "Jenkins Trunk",
+        "url": "http://ullici100.emea.nsn-net.net:9090/view/CPLANE/view/trunk/"
+      },
+      {
+        "name": "Jenkins ECL",
+        "url": "http://ullici100.emea.nsn-net.net:9090/view/ECLs/job/ECL_CPLANE_trunkalign_control/"
+      },
+      {
+        "name": "CI Guard",
+        "url": "http://ci-guard.dynamic.nsn-net.net/"
+      },
+      {
+        "name": "Revision Centric View",
+        "url": "http://cpweb2.int.net.nokia.com:8080/~lteulmcpci/rcv/?filterterm=trunk%40"
+      },
+      {
+        "name": "iSource Trunk",
+        "url": "https://hzisov70.china.nsn-net.net/isource/svnroot/BTS_SC_CPLANE/trunk/"
+      },
+      {
+        "name": "WOBOQ",
+        "url": "https://woboq.emea.nsn-net.net/"
+      },
+      {
+        "name": "Gitlab",
+        "url": "https://gitlabe1.ext.net.nokia.com"
+      },
+      {
+        "name": "Git Gerrit",
+        "url": "http://gerrit.nsn-net.net/#/q/status:open"
+      },
+      {
+        "name": "Fisheye",
+        "url": "https://fisheye4.int.net.nokia.com/"
+      },
+      {
+        "name": "Jira",
+        "url": "https://jira3.int.net.nokia.com/secure/Dashboard.jspa"
+      },
+      {
+        "name": "Trunk Load",
+        "url": "https://wft.int.net.nokia.com/ALL/branches/1209"
+      },
+      {
+        "name": "Carbonara NIDD",
+        "url": "http://lists.nidd.dynamic.nsn-net.net/"
+      },
+      {
+        "name": "NIDD",
+        "url": "http://esnidd053.emea.nsn-net.net/NIDD/"
+      },
+      {
+        "name": "WFT",
+        "url": "https://wft.int.net.nokia.com/"
+      },
+      {
+        "name": "Jenkins Sandbox",
+        "url": "http://10.135.163.139:5999"
+      },
+      {
+        "name": "SCT Guild",
+        "url": "https://sharenet-ims.int.net.nokia.com/livelink/livelink/overview/D496506765"
+      },
+      {
+        "name": "C++ Coding Standard",
+        "url": "https://sharenet-ims.int.net.nokia.com/Download/D502513937"
+      },
+      {
+        "name": "Sonar",
+        "url": "https://lte-sonar-daily.nsn-net.net/dashboard/index/17993?did=1"
+      },
+      {
+        "name": "SonarQube",
+        "url": "https://lte-sonar-fb.nsn-net.net/"
+      },
+      {
+        "name": "RAIN",
+        "url": "https://rain.int.net.nokia.com"
+      },
+      {
+        "name": "CPlane C&D",
+        "url": "https://krcplperf01.emea.nsn-net.net/9/"
+      },
+      {
+        "name": "Midori(MSG ID)",
+        "url": "https://midori.emea.nsn-net.net/#login"
+      },
+      {
+        "name": "Set Trace Tool",
+        "url": "http://10.182.70.27:8082/"
+      },
+      {
+        "name": "clang-tools-extra",
+        "url": "https://gitlab.dynamic.nsn-net.net/clang/clang-tools-extra"
+      }
+    ]
+  },
+  {
+    "name": "PO&EFS",
+    "type": "body",
+    "urls": [
+      {
+        "name": "Focalpoint",
+        "url": "https://focalpoint-prod.int.net.nokia.com/fp/workspace/38/homepage"
+      },
+      {
+        "name": "Collaborator",
+        "url": "https://collab.int.net.nokia.com/ui"
+      },
+      {
+        "name": "Gates",
+        "url": "https://gates.nsn-net.net/"
+      },
+      {
+        "name": "FBP",
+        "url": "https://sharenet-ims.int.net.nokia.com/Open/413273451"
+      },
+      {
+        "name": "SPP",
+        "url": "https://sharenet-ims.int.net.nokia.com/Open/435470858"
+      },
+      {
+        "name": "LBT",
+        "url": "https://sharenet-ims.int.net.nokia.com/Open/internal_features_LBT"
+      },
+      {
+        "name": "SLAB",
+        "url": "https://sharenet-ims.int.net.nokia.com/Open/518650120"
+      },
+      {
+        "name": "MSC",
+        "url": "https://sharenet-ims.int.net.nokia.com/Open/MSC"
+      },
+      {
+        "name": "ASN ITF",
+        "url": "https://sharenet-ims.int.net.nokia.com/Open/545852099"
+      },
+      {
+        "name": "System Program",
+        "url": "https://twiki.int.net.nokia.com/bin/view/LteWoW/SystemProgram"
+      },
+      {
+        "name": "Doctor",
+        "url": "https://doctor.int.net.nokia.com/nsn/jsp/default.jsp"
+      }
+    ]
+  },
+  {
+    "name": "Memo",
+    "type": "body",
+    "urls": [
+      {
+        "name": "VNC",
+        "url": "https://nokia-my.sharepoint.com/:w:/g/personal/rui_b_zhang_nokia-sbell_com/ESqnKDkPEsdBnzMPIzc0uXABZkj_kqYUSmJjBy1DmB10aw?e=VHVezU"
+      },
+      {
+        "name": "LANxiaofen_LTE-N-CPlane_Commit",
+        "url": "https://nokia-my.sharepoint.com/:w:/g/personal/xiaofen_lan_nokia-sbell_com/EQAdVlZ8-RJHg5oVSBVnehUBYkJ4ZvN4HPXzpgYvP33gTg?e=hzjBYK"
+      },
+      {
+        "name": "PIT",
+        "url": "https://nokia.sharepoint.com/:w:/s/FTSH0809-ScrumTeam/EToNN0ILTapFrcqecKE_F4wBJq0Hs6APPZjlMbAUuMM42w?e=YFSxF7"
+      }
+    ]
+  },
+  {
+    "name": "Entity Test",
+    "type": "body",
+    "urls": [
+      {
+        "name": "RISE",
+        "url": "http://rise.inside.nsn.com/"
+      },
+      {
+        "name": "WTS",
+        "url": "https://sharenet-ims.int.net.nokia.com/livelink/livelink?func=ll&objId=478180521&objAction=Browse"
+      },
+      {
+        "name": "Interrobang",
+        "url": "https://interrobang.emea.nsn-net.net/"
+      },
+      {
+        "name": "UTE",
+        "url": "http://asb-cm.wroclaw.nsn-rdnet.net/"
+      },
+      {
+        "name": "QC",
+        "url": "https://qc12-prod.int.net.nokia.com/qcbin/start_a.jsp"
+      },
+      {
+        "name": "ET Progress",
+        "url": "https://sharenet-ims.int.net.nokia.com/Overview/D546317371"
+      },
+      {
+        "name": "LTE Metrics",
+        "url": "http://ltemetrics.nsn-net.net/Scorecard/Dashboard"
+      }
+    ]
+  },
+  {
+    "name": "Programming",
+    "type": "body",
+    "urls": [
+      {
+        "name": "Cpp Reference",
+        "url": "http://en.cppreference.com/w/"
+      },
+      {
+        "name": "Google Test",
+        "url": "https://github.com/google/googletest/"
+      },
+      {
+        "name": "StackOverflow",
+        "url": "https://stackoverflow.com/"
+      },
+      {
+        "name": "Rosetta",
+        "url": "http://rosettacode.org/wiki/Rosetta_Code"
+      },
+      {
+        "name": "Cyber dojo",
+        "url": "http://cyber-dojo.org/"
+      },
+      {
+        "name": "Topcoder",
+        "url": "https://www.topcoder.com/"
+      },
+      {
+        "name": "Boost",
+        "url": "http://www.boost.org/doc/libs/1_63_0/"
+      },
+      {
+        "name": "W3School",
+        "url": "http://www.w3school.com.cn/"
+      },
+      {
+        "name": "Color Picker",
+        "url": "https://www.webpagefx.com/web-design/color-picker/"
+      },
+      {
+        "name": "Python.org",
+        "url": "http://doc.python.org"
+      },
+      {
+        "name": "Jobbole",
+        "url": "http://python.jobbole.com/"
+      },
+      {
+        "name": "Scrapy",
+        "url": "http://scrapy.org/"
+      },
+      {
+        "name": "Beatiful Soup",
+        "url": "http://www.crummy.com/software/BeautifulSoup/"
+      },
+      {
+        "name": "Python Libs",
+        "url": "http://www.lfd.uci.edu/~gohlke/pythonlibs/"
+      },
+      {
+        "name": "Github",
+        "url": "http://www.github.com"
+      },
+      {
+        "name": "Git Doc",
+        "url": "https://git-scm.com/doc"
+      },
+      {
+        "name": "Jenkins Doc",
+        "url": "https://jenkins.io/doc/"
+      },
+      {
+        "name": "Sourceforge",
+        "url": "https://sourceforge.net"
+      },
+      {
+        "name": "XPath Tutorial",
+        "url": "http://zvon.org/comp/r/tut-XPath_1.html"
+      },
+      {
+        "name": "lxml",
+        "url": "http://lxml.de/"
+      },
+      {
+        "name": "Crucible API",
+        "url": "https://confluence.atlassian.com/display/CRUCIBLE022/Crucible+REST+API+Usage+Example"
+      },
+      {
+        "name": "Bunny",
+        "url": "https://www.raywenderlich.com/24252/beginning-game-programming-for-teens-with-python"
+      },
+      {
+        "name": "W3School",
+        "url": "https://www.w3schools.com/"
+      },
+      {
+        "name": "HTML Formatter",
+        "url": "https://htmlformatter.com/"
+      },
+      {
+        "name": "HTML2Pug",
+        "url": "https://html-to-pug.com/"
+      }
+    ]
+  },
+  {
+    "name": "Minutes",
+    "type": "body",
+    "urls": [
+      {
+        "name": "SHA/WRO Enabling Phase",
+        "url": "https://nokia.sharepoint.com/sites/airscalel3shard/Notebook/MoM%20-%20SHA%26WRO%20Enabling%20Phase?d=w44a9e1bac93940108360e57dc75892aa"
+      },
+      {
+        "name": "SHA/WRO Enhancement Phase",
+        "url": "https://nokia.sharepoint.com/sites/airscalel3shard/Notebook/MoM%20-%20SHA%26WRO%20Enhacement%20Phase?d=w7e08b525664942a7a9f9f2f72867be3b"
+      },
+      {
+        "name": "LM/LPO MoM",
+        "url": "https://nokia.sharepoint.com/sites/airscalel3shard/Notebook/MoM%20-%20LPO%26LM%20SHA?d=w6a3f4094d0d54b98be1f0172c719dd81"
+      },
+      {
+        "name": "SHA Feature Tracking",
+        "url": "https://nokia.sharepoint.com/sites/airscalel3shard/Notebook/SHA%20Feature%20Status%20Tracking?d=wd642a4d094bc49679de147ef3049ce08"
+      },
+      {
+        "name": "SM CoP",
+        "url": "https://nokia.sharepoint.com/sites/airscalel3shard/Notebook/MoM%20-%20SM%20Community?d=w1a81ede0b993455d8f475d1e9ba8ab13"
+      },
+      {
+        "name": "Dojo Summary",
+        "url": "https://nokia.sharepoint.com/sites/airscalel3shard/Notebook/Team-Organized%20Learning%20Together?d=wedd62b7a1ea54a7ead470e654e554c25"
+      }
+    ]
+  },
+  {
+    "name": "Misc",
+    "type": "body",
+    "urls": [
+      {
+        "name": "SpritesGen",
+        "url": "http://css.spritegen.com/"
+      },
+      {
+        "name": "DHL",
+        "url": "https://eship.cndhl.com/"
+      },
+      {
+        "name": "Vocabulary",
+        "url": "https://www.vocabulary.com/"
+      },
+      {
+        "name": "CCP",
+        "url": "https://ccp.nokia-sbell.com/"
+      },
+      {
+        "name": "WuBi",
+        "url": "http://www.wangma.net.cn/search.aspx?sm=7"
+      },
+      {
+        "name": "PS Online",
+        "url": "http://www.photoshop.com/tools"
+      },
+      {
+        "name": "Graphic Finder",
+        "url": "http://graphicfinder.int.net.nokia.com/query/-/category/photo/format/all/sort/default"
+      },
+      {
+        "name": "ETC",
+        "url": "http://htk.sptcc.com:8081/pages/CheckBalance.aspx"
+      },
+      {
+        "name": "WordTimeBuddy",
+        "url": "https://www.worldtimebuddy.com/"
+      },
       {
         "name": "Safari-Books",
         "url": "https://www.safaribooksonline.com/"
       },
       {
-        "name": "EE Cloud",
-        "url": "http://hz-dc-os-ohn-12.eecloud.nsn-net.net/"
-      },
-      {
-        "name": "log5G",
-        "url": "http://10.182.44.97:5000/log5g.html"
-      },
-      {
-        "name": "Google",
-        "url": "http://www.google.com"
-      },
-      {
-        "name": "Google",
-        "url": "http://www.google.com"
-      },
-      {
-        "name": "Google",
-        "url": "http://www.google.com"
-      },
-      {
-        "name": "Google",
-        "url": "http://www.google.com"
-      },
-      {
-        "name": "Google",
-        "url": "http://www.google.com"
-      },
-      {
-        "name": "Google",
-        "url": "http://www.google.com"
-      },
-      {
-        "name": "GoogleD",
-        "url": "http://www.google.com"
-      }
-    ]
-  },
-  {
-    "name": "Section-2",
-    "type": "body",
-    "urls": [
-      {
-        "name": "Google",
-        "url": "http://www.google.com"
-      },
-      {
-        "name": "EE Cloud",
-        "url": "http://hz-dc-os-ohn-12.eecloud.nsn-net.net/"
-      },
-      {
-        "name": "Jenkins sandbox",
-        "url": "http://10.182.65.66:9090"
-      },
-      {
-        "name": "Github",
-        "url": "http://www.github.com"
-      },
-      {
-        "name": "Jenkins Sandbox",
-        "url": "http://10.182.67.29:9090"
-      },
-      {
-        "name": "Office365",
-        "url": "https://www.office.com/?auth=2&home=1"
-      },
-      {
-        "name": "CES",
-        "url": "http://viz.eecloud.dynamic.nsn-net.net"
-      },
-      {
-        "name": "GoogleX",
-        "url": "http://www.google.com"
-      },
-      {
-        "name": "Google",
-        "url": "http://www.google.com"
-      },
-      {
-        "name": "Google",
-        "url": "http://www.google.com"
-      }
-    ]
-  },
-  {
-    "name": "Section-3",
-    "type": "body",
-    "urls": [
-      {
-        "name": "Google",
-        "url": "http://www.google.com"
-      },
-      {
-        "name": "EE Cloud",
-        "url": "http://hz-dc-os-ohn-12.eecloud.nsn-net.net/"
-      },
-      {
-        "name": "Jenkins sandbox",
-        "url": "http://10.182.65.66:9090"
-      },
-      {
-        "name": "Github",
-        "url": "http://www.github.com"
-      },
-      {
-        "name": "Jenkins Sandbox",
-        "url": "http://10.182.67.29:9090"
-      },
-      {
-        "name": "Office365",
-        "url": "https://www.office.com/?auth=2&home=1"
-      },
-      {
-        "name": "CES",
-        "url": "http://viz.eecloud.dynamic.nsn-net.net"
-      },
-      {
-        "name": "GoogleX",
-        "url": "http://www.google.com"
-      },
-      {
-        "name": "Google",
-        "url": "http://www.google.com"
-      },
-      {
-        "name": "Google",
-        "url": "http://www.google.com"
-      }
-    ]
-  },
-  {
-    "name": "Section-4",
-    "type": "body",
-    "urls": [
-      {
-        "name": "Google",
-        "url": "http://www.google.com"
-      },
-      {
-        "name": "EE Cloud",
-        "url": "http://hz-dc-os-ohn-12.eecloud.nsn-net.net/"
-      },
-      {
-        "name": "Jenkins sandbox",
-        "url": "http://10.182.65.66:9090"
-      },
-      {
-        "name": "Github",
-        "url": "http://www.github.com"
-      },
-      {
-        "name": "Jenkins Sandbox",
-        "url": "http://10.182.67.29:9090"
-      },
-      {
-        "name": "Office365",
-        "url": "https://www.office.com/?auth=2&home=1"
-      },
-      {
-        "name": "CES",
-        "url": "http://viz.eecloud.dynamic.nsn-net.net"
-      },
-      {
-        "name": "GoogleX",
-        "url": "http://www.google.com"
-      },
-      {
-        "name": "Google",
-        "url": "http://www.google.com"
-      },
-      {
-        "name": "Google",
-        "url": "http://www.google.com"
-      }
-    ]
-  },
-  {
-    "name": "Section-5",
-    "type": "body",
-    "urls": [
-      {
-        "name": "Google",
-        "url": "http://www.google.com"
-      },
-      {
-        "name": "EE Cloud",
-        "url": "http://hz-dc-os-ohn-12.eecloud.nsn-net.net/"
-      },
-      {
-        "name": "Jenkins sandbox",
-        "url": "http://10.182.65.66:9090"
-      },
-      {
-        "name": "Github",
-        "url": "http://www.github.com"
-      },
-      {
-        "name": "Jenkins Sandbox",
-        "url": "http://10.182.67.29:9090"
-      },
-      {
-        "name": "Office365",
-        "url": "https://www.office.com/?auth=2&home=1"
-      },
-      {
-        "name": "CES",
-        "url": "http://viz.eecloud.dynamic.nsn-net.net"
-      },
-      {
-        "name": "GoogleX",
-        "url": "http://www.google.com"
-      },
-      {
-        "name": "Google",
-        "url": "http://www.google.com"
-      },
-      {
-        "name": "Google",
-        "url": "http://www.google.com"
+        "name": "17Sucai",
+        "url": "http://www.17sucai.com"
       }
     ]
   }

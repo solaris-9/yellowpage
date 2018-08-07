@@ -54,14 +54,19 @@ const g_toc = '<a class="btn btn-outline-__THEME__ \
             
 const g_column_per_row = 7;
 
-const g_themes = {
-    'Navbar': 'primary',
-    'Section-1': 'primary',
-    'Section-2': 'info',
-    'Section-3': 'success',
-    'Section-4': 'secondary',
-    'Section-5': 'primary'
-};
+const g_themes = [
+    'primary',
+    'primary',
+    'secondary',
+    'success',
+    'info',
+    'dark',
+    'primary',
+    'secondary',
+    'success',
+    'info',
+    'dark'
+];
                 
 $( document ).ready(function() {
     $.getJSON("/db/url.json", function(json) {
@@ -77,7 +82,7 @@ $( document ).ready(function() {
                     navStr += g_nav.
                     replace(/__NAV_URL__/, json[i].urls[m].url).
                     replace(/__NAV_TAG__/, json[i].urls[m].name).
-                    replace(/__THEME__/, g_themes[json[i].name]);
+                    replace(/__THEME__/, g_themes[i]);
                 }
                 $('#navList').html(navStr);
                 continue;
@@ -85,7 +90,7 @@ $( document ).ready(function() {
             
             // The topics
             var l_topic_str = g_toc.replace(/__SECTION__/g, json[i].name).
-                            replace(/__THEME__/, g_themes[json[i].name]);
+                            replace(/__THEME__/, g_themes[i]);
             
             // populating the single table
             // caculate how many rows will be in each table
@@ -99,7 +104,7 @@ $( document ).ready(function() {
                 for(var c=0; c<g_column_per_row; c++){
                     var l_pos = r * g_column_per_row + c;
                     var l_item_pattern = '__ITEM_' + (c+1) + '__';
-                    var l_id = json[i].name + '_' + (r+1) + '_' + (c+1);
+                    var l_id = json[i].name + '_' + i + '_' + (r+1) + '_' + (c+1);
                     var l_id_pattern = '__ID_' + (c+1) + '__';
                     
                     l_row_str = l_row_str.replace(l_id_pattern, l_id);
@@ -119,7 +124,7 @@ $( document ).ready(function() {
             }
             l_table_str = g_table.replace(/__ROWS__/g, l_row_str);
             l_table_str = l_table_str.replace(/__SECTION__/g, json[i].name).
-                            replace(/__THEME__/g, g_themes[json[i].name]); 
+                            replace(/__THEME__/g, g_themes[i]); 
                             //TODO: different table use different themes
             
             $('#tables')[0].innerHTML += l_table_str;
@@ -185,22 +190,48 @@ $('#myModal').on('show.bs.modal', function (event) {
   //modal.find('.modal-body input').val(recipient)
 })
 
+$("input").keyup(function(event) {
+    if(this.value.length > 0) {
+        this.style.backgroundColor = 'transparent';
+    } else {
+        this.style.backgroundColor = 'pink';
+    }
+});
+
 $("#form1").submit(function(e) {
-    e.preventDefault();    
+    e.preventDefault();  
+    var l_flag = false;
     var l_tag_val = $( "#tag-name" ).val();
+    if(l_tag_val == '') {
+        l_flag = true;
+        $( "#tag-name" ).css("background-color", "pink");
+    }
     var l_url_val = $( "#url-name" ).val();
+    if(l_url_val == '') {
+        l_flag = true;
+        $( "#url-name" ).css("background-color", "pink");
+    }
     var l_added_by = $( "#added-name" ).val();
-    // example: B_Section-1_3_2
+    if(l_added_by == '') {
+        l_flag = true;
+        $( "#added-name" ).css("background-color", "pink");
+    }
+    if (l_flag) {
+        return;
+    }
+    // example: B_Section-1_1_3_2
     /* l_parts_from_id[1]: the name of the section, 
      *         important to find the correct entry in url.json
-     *l_parts_from_id[2]: the row of the table
-     *l_parts_from_id[3]: the column of the table
+     * l_parts_from_id[2]: the sequence id of the section
+     *l_parts_from_id[3]: the row of the table
+     *l_parts_from_id[4]: the column of the table
     */
     var l_parts_from_id = g_target_id.split('_');
     
     console.log('DEBUG: Tag Value = ' + l_tag_val);
     console.log('DEBUG: Parts from ID = ' + l_parts_from_id[1] + ', ' + 
-                    l_parts_from_id[2] + ', ' + l_parts_from_id[3]);
+                    l_parts_from_id[2] + ', ' + l_parts_from_id[3]  + 
+                    ', ' + l_parts_from_id[4]);
     //var pElement = target[0].parentElement; //td
     //var addIconHtml = pElement.innerHTML;
     //var sectionVal = target[0].id;
@@ -221,26 +252,26 @@ $("#form1").submit(function(e) {
             $('#' + g_target_id.replace(/B_/, 'R_')).html(g_item.
                                         replace(/__ITEM_URL__/, l_url_val).
                                         replace(/__ITEM_TAG__/, l_tag_val).
-                                        replace(/__THEME__/g, g_themes[l_parts_from_id[1]]));
+                                        replace(/__THEME__/g, g_themes[l_parts_from_id[2]]));
                                         
-            if(parseInt(l_parts_from_id[3]) == g_column_per_row){
+            if(parseInt(l_parts_from_id[4]) == g_column_per_row){
                 // A new row must be added.
                 // 1st item of the new row is the add icon
-                var l_new_id = l_parts_from_id[1] + '_' + 
-                                (parseInt(l_parts_from_id[2]) + 1) + '_' + '1';
+                var l_new_id = l_parts_from_id[1] + '_' + l_parts_from_id[2] + '_' +
+                                (parseInt(l_parts_from_id[3]) + 1) + '_' + '1';
                 var l_new_row = g_trow.replace(/__ITEM_1__/, g_add).
                             replace(/__ID__/, l_new_id).
                             replace(/__ID_1__/, l_new_id).
                             replace(/__ITEM_\d__/g, '').
-                            replace(/__THEME__/g, g_themes[l_parts_from_id[1]]);  
+                            replace(/__THEME__/g, g_themes[l_parts_from_id[2]]);  
                             //TODO: different table use different themes
                             
                 for(var i = 2; i <= g_column_per_row; i++) {
-                    var l_new_id = l_parts_from_id[1] + '_' + 
-                                (parseInt(l_parts_from_id[2]) + 1) + '_' + '1';
+                    /*var l_new_id = l_parts_from_id[1] + '_' + 
+                                (parseInt(l_parts_from_id[2]) + 1) + '_' + '1';*/
                     var l_id_pattern = '__ID_' + i + '__';
-                    var l_id = l_parts_from_id[1] + '_' + 
-                                (parseInt(l_parts_from_id[2]) + 1) + '_' + i;
+                    var l_id = l_parts_from_id[1] + '_' + l_parts_from_id[2] + '_' +
+                                (parseInt(l_parts_from_id[3]) + 1) + '_' + i;
                     l_new_row = l_new_row.replace(l_id_pattern, l_id);
                 }
                 
@@ -248,12 +279,12 @@ $("#form1").submit(function(e) {
             } else {
                 // In current cell: render url & tab
                 // In next cell: render a addIcon
-                var l_new_id = l_parts_from_id[1] + '_' + 
-                                l_parts_from_id[2] + '_' + 
-                                (parseInt(l_parts_from_id[3]) + 1);
+                var l_new_id = l_parts_from_id[1] + '_' + l_parts_from_id[2] + '_' +
+                                l_parts_from_id[3] + '_' + 
+                                (parseInt(l_parts_from_id[4]) + 1);
                                 
                 $('#R_'+l_new_id).html(g_add.replace(/__ID__/, l_new_id).
-                                        replace(/__THEME__/g, g_themes[l_parts_from_id[1]]));
+                                        replace(/__THEME__/g, g_themes[l_parts_from_id[2]]));
             }
             /*if(pElement.nextSibling) {
                 pElement.nextElementSibling.innerHTML = addIconHtml;

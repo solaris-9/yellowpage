@@ -67,6 +67,9 @@ td.tdEven {
 .btn-outline-success {
     border-color: transparent;
 }*/
+.btn {
+    white-space: normal;
+}
 
 a[class*="btn-outline-"]{
     border-color: transparent;
@@ -78,12 +81,12 @@ a[class*="btn-outline-"]{
 	top: 5rem;
 	height: calc(100vh - 5rem);
 	overflow-y: auto;
-    padding-left: 0;
-    padding-right: 0;
+    /*padding-left: 0;
+    padding-right: 0;*/
 }
 
 .container {
     order: 0;
-    padding-left: 2rem;
+    padding-left: 0;
     padding-right: 0;
 }

@@ -12,11 +12,17 @@ html
         // Custom styles for this template
         link(href='/stylesheets/style.css' rel='stylesheet')
     body
+        |
+        |
         include navbar.pug
         |
-        .row.flex-xl-nowrap
-            nav.col-1.bd-toc#topics
-            main.container.col-xl-10#tables(role='main')
+        |
+        .container-fluid
+            .row.flex-xl-nowrap
+                nav.col-auto.bd-toc#topics
+                main.container.col-xl-10#tables(role='main')
+                |
+                |
         include modal.pug
         |
         |
