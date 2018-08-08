@@ -23,7 +23,7 @@ const g_table = '<table class="table table-borderless">\
                                 href="#collapse__SECTION__" role="button" \
                                 id="__SECTION__" \
                                 aria-expanded="true" aria-controls="collapse__SECTION__">\
-                                __SECTION__</a></th>\
+                                __SECTION_TAG__</a></th>\
                     </tr></thead>\
                     <tbody class="collapse show" id="collapse__SECTION__"> \
                     __ROWS__</tbody></table>';
@@ -50,7 +50,7 @@ const g_add = '<a class="btn btn-outline-__THEME__ btn-block" \
                 <img src="/images/add.02.png"></a>';
 
 const g_toc = '<a class="btn btn-outline-__THEME__ \
-            btn-block nav-link  font-weight-bold" href="#__SECTION__">__SECTION__</a>';
+            btn-block nav-link  font-weight-bold" href="#__SECTION__">__SECTION_TAG__</a>';
             
 const g_column_per_row = 7;
 
@@ -89,7 +89,8 @@ $( document ).ready(function() {
             }
             
             // The topics
-            var l_topic_str = g_toc.replace(/__SECTION__/g, json[i].name).
+            var l_topic_str = g_toc.replace(/__SECTION__/g, json[i].name.replace(/ /g, '')).
+                            replace(/__SECTION_TAG__/g, json[i].name).
                             replace(/__THEME__/, g_themes[i]);
             
             // populating the single table
@@ -104,7 +105,7 @@ $( document ).ready(function() {
                 for(var c=0; c<g_column_per_row; c++){
                     var l_pos = r * g_column_per_row + c;
                     var l_item_pattern = '__ITEM_' + (c+1) + '__';
-                    var l_id = json[i].name + '_' + i + '_' + (r+1) + '_' + (c+1);
+                    var l_id = json[i].name.replace(/ /g, '') + '_' + i + '_' + (r+1) + '_' + (c+1);
                     var l_id_pattern = '__ID_' + (c+1) + '__';
                     
                     l_row_str = l_row_str.replace(l_id_pattern, l_id);
@@ -123,7 +124,8 @@ $( document ).ready(function() {
                 }
             }
             l_table_str = g_table.replace(/__ROWS__/g, l_row_str);
-            l_table_str = l_table_str.replace(/__SECTION__/g, json[i].name).
+            l_table_str = l_table_str.replace(/__SECTION__/g, json[i].name.replace(/ /g, '')).
+                            replace(/__SECTION_TAG__/g, json[i].name).
                             replace(/__THEME__/g, g_themes[i]); 
                             //TODO: different table use different themes
             
@@ -257,7 +259,7 @@ $("#form1").submit(function(e) {
             if(parseInt(l_parts_from_id[4]) == g_column_per_row){
                 // A new row must be added.
                 // 1st item of the new row is the add icon
-                var l_new_id = l_parts_from_id[1] + '_' + l_parts_from_id[2] + '_' +
+                var l_new_id = l_parts_from_id[1].replace(/ /g, '') + '_' + l_parts_from_id[2] + '_' +
                                 (parseInt(l_parts_from_id[3]) + 1) + '_' + '1';
                 var l_new_row = g_trow.replace(/__ITEM_1__/, g_add).
                             replace(/__ID__/, l_new_id).
@@ -270,16 +272,16 @@ $("#form1").submit(function(e) {
                     /*var l_new_id = l_parts_from_id[1] + '_' + 
                                 (parseInt(l_parts_from_id[2]) + 1) + '_' + '1';*/
                     var l_id_pattern = '__ID_' + i + '__';
-                    var l_id = l_parts_from_id[1] + '_' + l_parts_from_id[2] + '_' +
+                    var l_id = l_parts_from_id[1].replace(/ /g, '') + '_' + l_parts_from_id[2] + '_' +
                                 (parseInt(l_parts_from_id[3]) + 1) + '_' + i;
                     l_new_row = l_new_row.replace(l_id_pattern, l_id);
                 }
                 
-                $('#collapse' + l_parts_from_id[1])[0].innerHTML += l_new_row;
+                $('#collapse' + l_parts_from_id[1].replace(/ /g, ''))[0].innerHTML += l_new_row;
             } else {
                 // In current cell: render url & tab
                 // In next cell: render a addIcon
-                var l_new_id = l_parts_from_id[1] + '_' + l_parts_from_id[2] + '_' +
+                var l_new_id = l_parts_from_id[1].replace(/ /g, '') + '_' + l_parts_from_id[2] + '_' +
                                 l_parts_from_id[3] + '_' + 
                                 (parseInt(l_parts_from_id[4]) + 1);
                                 

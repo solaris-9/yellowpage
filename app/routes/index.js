@@ -23,7 +23,7 @@ router.post('/', function (req, res, next) {
   // write file to JSON
   for(var i = 0 ; i < db.length; i++) {
     console.log('DEBUG: ' + db[i].name + ', # of urls: ' + db[i].urls.length);
-    if (db[i].name == section) {
+    if (db[i].name.replace(/ /g, '') == section) {
         //console.log('DEBUG: found : ' + section + ' at pos: ' + i);
         db[i].urls.push({
             "name": tag,

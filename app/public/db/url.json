@@ -28,33 +28,37 @@
         "url": "http://directory.app.alcatel-lucent.com/"
       },
       {
+        "name": "IDM(NIMS)",
+        "url": "https://idm.int.net.nokia.com/IdmGuiWeb/flow/person/globalSearch?execution=e2s1"
+      },
+      {
         "name": "Meeting-Room",
         "url": "http://wlsweb.cn.alcatel-lucent.com/mrbs/"
       }
     ]
   },
   {
-    "name": "General",
+    "name": "General Tools",
     "type": "body",
     "urls": [
-      {
-        "name": "Sharenet",
-        "url": "https://sharenet-ims.int.net.nokia.com/livelink/livelink?func=llworkspace"
-      },
       {
         "name": "PWC",
         "url": "https://pwc.int.net.nokia.com/"
       },
       {
-        "name": "L3 Members",
+        "name": "CPlane Members with Photo",
         "url": "https://bts.inside.nsn.com/twiki/bin/view/LTEeNB/CPlaneTeam#C_Plane_LTE_Shanghai_Team"
       },
       {
-        "name": "L3 WIKI",
+        "name": "ASCL3SHARD Sharepoint",
+        "url": "https://nokia.sharepoint.com/sites/airscalel3shard"
+      },
+      {
+        "name": "ASCL3SHARD WIKI",
         "url": "https://nokia.sharepoint.com/sites/airscalel3shard/Wiki/Home.aspx"
       },
       {
-        "name": "TWiki",
+        "name": "CPlane TWiki",
         "url": "https://bts.inside.nsn.com"
       },
       {
@@ -70,16 +74,8 @@
         "url": "https://nokialearn.csod.com/client/nokialearn/default.aspx"
       },
       {
-        "name": "IDM(NIMS)",
-        "url": "https://idm.int.net.nokia.com/IdmGuiWeb/flow/person/globalSearch?execution=e2s1"
-      },
-      {
         "name": "WebEx",
         "url": "https://nokiameetings.webex.com/mw3100/mywebex/default.do?siteurl=nokiameetings&amp;service=10"
-      },
-      {
-        "name": "L3 Sharepoint",
-        "url": "https://nokia.sharepoint.com/sites/airscalel3shard"
       },
       {
         "name": "L3 Yammer",
@@ -118,22 +114,6 @@
         "url": "http://hz-dc-os-ohn-12.eecloud.nsn-net.net/"
       },
       {
-        "name": "Pronto",
-        "url": "https://pronto.int.net.nokia.com/pronto/home.html"
-      },
-      {
-        "name": "Pronto Improvement",
-        "url": "http://10.182.65.78:8080"
-      },
-      {
-        "name": "Doors",
-        "url": "https://citrixapps.int.net.nokia.com/Citrix/XenApp/site/default.aspx"
-      },
-      {
-        "name": "Aginoodle",
-        "url": "https://lte.aginoodle.emea.nsn-net.net/"
-      },
-      {
         "name": "Recognition",
         "url": "https://www.globoforce.net/microsites/t/home?client=nsn&setCAG=true"
       },
@@ -142,20 +122,67 @@
         "url": "https://nokia.sharepoint.com/sites/learn/achiev/SitePages/index.aspx"
       },
       {
-        "name": "Report Portal",
-        "url": "https://4g-rep-portal.wroclaw.nsn-rdnet.net/dashboard/main/"
+        "name": "Travel Approval",
+        "url": "https://nokia.sharepoint.com/sites/MN_Travel_Request_Pre-Approval/Lists/MN%204GRAN%20Travel%20Request%20PreApproval/AllItems.aspx"
+      }
+    ]
+  },
+  {
+    "name": "Daily Work",
+    "type": "body",
+    "urls": [
+      {
+        "name": "Pronto",
+        "url": "https://pronto.int.net.nokia.com/pronto/home.html"
+      },
+      {
+        "name": "Pronto Improvement",
+        "url": "http://10.182.65.78:8080"
       },
       {
         "name": "C-Plane Pronto",
         "url": "https://prontos.dynamic.nsn-net.net/"
       },
       {
-        "name": "Travel Approval",
-        "url": "https://nokia.sharepoint.com/sites/MN_Travel_Request_Pre-Approval/Lists/MN%204GRAN%20Travel%20Request%20PreApproval/AllItems.aspx"
+        "name": "Aginoodle",
+        "url": "https://lte.aginoodle.emea.nsn-net.net/"
       },
       {
-        "name": "OneLab",
-        "url": "https://nok.it/onelab"
+        "name": "Jira",
+        "url": "https://jira3.int.net.nokia.com/secure/Dashboard.jspa"
+      },
+      {
+        "name": "Fisheye",
+        "url": "https://fisheye4.int.net.nokia.com/"
+      },
+      {
+        "name": "WFT",
+        "url": "https://wft.int.net.nokia.com/"
+      },
+      {
+        "name": "WFT Trunk",
+        "url": "https://wft.int.net.nokia.com/ALL/branches/1209"
+      },
+      {
+        "name": "Carbonara NIDD",
+        "url": "http://lists.nidd.dynamic.nsn-net.net/"
+      },
+      {
+        "name": "NIDD",
+        "url": "http://esnidd053.emea.nsn-net.net/NIDD/"
+      },
+      {
+        "name": "Trace Level Tool",
+        "url": "http://10.182.70.27:8082/"
+      },
+      {
+        "name": "clang-tools-extra",
+        "url": "https://gitlab.dynamic.nsn-net.net/clang/clang-tools-extra"
+      },
+      {
+        "name": "Reset iSource Password",
+        "url": "https://isource.access.nsn.com/plugins/is_svn_auth/",
+        "added": "dzeng"
       }
     ]
   },
@@ -196,30 +223,6 @@
         "url": "http://gerrit.nsn-net.net/#/q/status:open"
       },
       {
-        "name": "Fisheye",
-        "url": "https://fisheye4.int.net.nokia.com/"
-      },
-      {
-        "name": "Jira",
-        "url": "https://jira3.int.net.nokia.com/secure/Dashboard.jspa"
-      },
-      {
-        "name": "Trunk Load",
-        "url": "https://wft.int.net.nokia.com/ALL/branches/1209"
-      },
-      {
-        "name": "Carbonara NIDD",
-        "url": "http://lists.nidd.dynamic.nsn-net.net/"
-      },
-      {
-        "name": "NIDD",
-        "url": "http://esnidd053.emea.nsn-net.net/NIDD/"
-      },
-      {
-        "name": "WFT",
-        "url": "https://wft.int.net.nokia.com/"
-      },
-      {
         "name": "Jenkins Sandbox",
         "url": "http://10.135.163.139:5999"
       },
@@ -250,19 +253,11 @@
       {
         "name": "Midori(MSG ID)",
         "url": "https://midori.emea.nsn-net.net/#login"
-      },
-      {
-        "name": "Set Trace Tool",
-        "url": "http://10.182.70.27:8082/"
-      },
-      {
-        "name": "clang-tools-extra",
-        "url": "https://gitlab.dynamic.nsn-net.net/clang/clang-tools-extra"
       }
     ]
   },
   {
-    "name": "PO&EFS",
+    "name": "PO and EFS",
     "type": "body",
     "urls": [
       {
@@ -320,7 +315,7 @@
         "url": "https://nokia-my.sharepoint.com/:w:/g/personal/rui_b_zhang_nokia-sbell_com/ESqnKDkPEsdBnzMPIzc0uXABZkj_kqYUSmJjBy1DmB10aw?e=VHVezU"
       },
       {
-        "name": "LANxiaofen_LTE-N-CPlane_Commit",
+        "name": "CPlane Commit Memo (LanXiaoFen)",
         "url": "https://nokia-my.sharepoint.com/:w:/g/personal/xiaofen_lan_nokia-sbell_com/EQAdVlZ8-RJHg5oVSBVnehUBYkJ4ZvN4HPXzpgYvP33gTg?e=hzjBYK"
       },
       {
@@ -360,11 +355,15 @@
       {
         "name": "LTE Metrics",
         "url": "http://ltemetrics.nsn-net.net/Scorecard/Dashboard"
+      },
+      {
+        "name": "OneLab",
+        "url": "https://nok.it/onelab"
       }
     ]
   },
   {
-    "name": "Programming",
+    "name": "Cpp Programming",
     "type": "body",
     "urls": [
       {
@@ -374,10 +373,6 @@
       {
         "name": "Google Test",
         "url": "https://github.com/google/googletest/"
-      },
-      {
-        "name": "StackOverflow",
-        "url": "https://stackoverflow.com/"
       },
       {
         "name": "Rosetta",
@@ -395,6 +390,32 @@
         "name": "Boost",
         "url": "http://www.boost.org/doc/libs/1_63_0/"
       },
+      {
+        "name": "StackOverflow",
+        "url": "https://stackoverflow.com/"
+      },
+      {
+        "name": "Github",
+        "url": "http://www.github.com"
+      },
+      {
+        "name": "Git Doc",
+        "url": "https://git-scm.com/doc"
+      },
+      {
+        "name": "Jenkins Doc",
+        "url": "https://jenkins.io/doc/"
+      },
+      {
+        "name": "Sourceforge",
+        "url": "https://sourceforge.net"
+      }
+    ]
+  },
+  {
+    "name": "Python and WWW",
+    "type": "body",
+    "urls": [
       {
         "name": "W3School",
         "url": "http://www.w3school.com.cn/"
@@ -424,22 +445,6 @@
         "url": "http://www.lfd.uci.edu/~gohlke/pythonlibs/"
       },
       {
-        "name": "Github",
-        "url": "http://www.github.com"
-      },
-      {
-        "name": "Git Doc",
-        "url": "https://git-scm.com/doc"
-      },
-      {
-        "name": "Jenkins Doc",
-        "url": "https://jenkins.io/doc/"
-      },
-      {
-        "name": "Sourceforge",
-        "url": "https://sourceforge.net"
-      },
-      {
         "name": "XPath Tutorial",
         "url": "http://zvon.org/comp/r/tut-XPath_1.html"
       },
@@ -456,8 +461,8 @@
         "url": "https://www.raywenderlich.com/24252/beginning-game-programming-for-teens-with-python"
       },
       {
-        "name": "W3School",
-        "url": "https://www.w3schools.com/"
+        "name": "SpritesGen",
+        "url": "http://css.spritegen.com/"
       },
       {
         "name": "HTML Formatter",
@@ -503,10 +508,6 @@
     "name": "Misc",
     "type": "body",
     "urls": [
-      {
-        "name": "SpritesGen",
-        "url": "http://css.spritegen.com/"
-      },
       {
         "name": "DHL",
         "url": "https://eship.cndhl.com/"
