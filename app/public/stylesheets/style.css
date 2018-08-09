@@ -71,7 +71,7 @@ td.tdEven {
     white-space: normal;
 }
 
-a[class*="btn-outline-"]{
+[class*="btn-outline-"]{
     border-color: transparent;
 }
 

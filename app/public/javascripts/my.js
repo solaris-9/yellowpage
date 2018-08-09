@@ -52,6 +52,15 @@ const g_add = '<a class="btn btn-outline-__THEME__ btn-block" \
 const g_toc = '<a class="btn btn-outline-__THEME__ \
             btn-block nav-link  font-weight-bold" href="#__SECTION__">__SECTION_TAG__</a>';
             
+const g_about = '<li class="nav-item">\
+                <a class="btn btn-outline-__THEME__ text-sm-center nav-link font-weight-bold" \
+                data-toggle="popover" title="About this page" data-content="Powered by JQuery, Ajax, \
+                Bootstrap, Express, Pug, NodeJS. <br><br>\
+                Contact: Dongxu.Zeng@nokia-sbell.com" id="B_About">About</a></li>';
+/*const g_about = '<li class="nav-item">\
+                <button class="btn btn-outline-__THEME__ text-sm-center font-weight-bold" \
+                data-toggle="popover" data-content="Test" id="BAbout" href="#">About</button></li>';*/
+            
 const g_column_per_row = 7;
 
 const g_themes = [
@@ -67,6 +76,8 @@ const g_themes = [
     'info',
     'dark'
 ];
+
+
                 
 $( document ).ready(function() {
     $.getJSON("/db/url.json", function(json) {
@@ -77,14 +88,15 @@ $( document ).ready(function() {
         for(var i = 0 ; i < json.length; i++) {
             /* Navbar populating */
             if (json[i].type == 'nav') {
-                var navStr = '';
+                var l_nav_str = '';
                 for (var m = 0; m < json[i].urls.length; m++) {
-                    navStr += g_nav.
+                    l_nav_str += g_nav.
                     replace(/__NAV_URL__/, json[i].urls[m].url).
                     replace(/__NAV_TAG__/, json[i].urls[m].name).
                     replace(/__THEME__/, g_themes[i]);
                 }
-                $('#navList').html(navStr);
+                //l_nav_str += g_about.replace(/__THEME__/, g_themes[i]);
+                $('#navList').html(l_nav_str);
                 continue;
             }
             
@@ -176,9 +188,26 @@ $( document ).ready(function() {
             $('#tables').html(str);*/
         }
     });
+
+    $('#B_About').popover({
+            html: true
+        });
     console.log("DEBUB: The page is loaded"); 
 });
 
+/*$(document).on('click', '#BAbout', function(e) {
+    $('#BAbout').popover('toggle');
+    e.preventDefault();
+    console.log(e.type);
+});*/
+
+document.addEventListener('click', function (e) {
+    if (e.target.id == 'B_About') {
+        $('#B_About').popover({
+            html: true
+        });
+    }
+}, false);
 
 $('#myModal').on('show.bs.modal', function (event) {
   //console.log('modal is shown')
