@@ -471,6 +471,11 @@
       {
         "name": "HTML2Pug",
         "url": "https://html-to-pug.com/"
+      },
+      {
+        "name": "Navbar Demo",
+        "url": "http://jsbin.com/oxajeq/3/edit?html,css,js,output",
+        "added": "dzeng"
       }
     ]
   },
