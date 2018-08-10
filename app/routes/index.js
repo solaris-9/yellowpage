@@ -11,30 +11,27 @@ router.get('/', function(req, res, next) {
 
 /* POST handler. */
 router.post('/', function (req, res, next) {
-  var section = req.param('section');
-  var tag = req.param('tag');
-  var href = req.param('url');
-  var added = req.param('added');
-  var i = 'tag='+ tag + ', url=' + href + ', section=' + section + ', added=' + added;
-  console.log(i);
-  res.send(i);
-  var db = null;
-  db = JSON.parse(fs.readFileSync('/src/app/public/db/url.json', 'utf8'));
-  // write file to JSON
-  for(var i = 0 ; i < db.length; i++) {
-    console.log('DEBUG: ' + db[i].name + ', # of urls: ' + db[i].urls.length);
-    if (db[i].name.replace(/ /g, '') == section) {
-        //console.log('DEBUG: found : ' + section + ' at pos: ' + i);
+    var l_section = req.param('section');
+    var l_tag = req.param('tag');
+    var l_href = req.param('url');
+    var l_added = req.param('added');
+    var i = 'tag='+ l_tag + ', url=' + l_href + ', section=' + l_section + ', added=' + l_added;
+    console.log(i);
+    res.send(i);
+    var db = null;
+    db = JSON.parse(fs.readFileSync('/src/app/public/db/url.json', 'utf8'));
+    // write file to JSON
+    var i = parseInt(l_section);
+    if(i < db.length) {
+        console.log('DEBUG: Pushing : ' + db[i].name + ', # of urls: ' + db[i].urls.length);
         db[i].urls.push({
-            "name": tag,
-            "url": href,
-            "added": added
+            "name": l_tag,
+            "url": l_href,
+            "added": l_added
         });
-        console.log('DEBUG: pushed : ' + section + ' at pos: ' + i);
-        break;
+        console.log('DEBUG: pushed : ' + db[i].name + ', # of urls: ' + db[i].urls.length);
     }
-  }
-  jsonData = JSON.stringify(db, null, 2);
+    jsonData = JSON.stringify(db, null, 2);
     fs.writeFile('/src/app/public/db/url.json', jsonData, function (err) {
     if (err) 
       console.log(err);

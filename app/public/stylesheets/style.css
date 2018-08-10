@@ -110,3 +110,104 @@ td.tdEven {
     width: 90%;
     padding-left: 10%;
 }
+
+/* following is for the new theme */
+li {
+	list-style:none;
+    padding-left: 5px;
+}
+
+.title{
+    background:#f1faed;
+    border-top:1px solid #aad69e;
+    border-bottom:1px solid #d4eace;
+    height:40px;
+    line-height:40px;
+    padding:0 12px;
+    font-size:20px;
+    color:#390;
+    margin-top:-1px;
+    position:relative;
+    z-index:10;
+    margin-bottom: 0px;
+}
+
+.list{
+    margin-bottom:-1px;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+.list li{
+    float:left;
+    width:197px;
+    height:33px;
+    line-height:33px;
+    border-style:solid;
+    border-color:#d4eace;
+    border-width:0 1px 1px 0;
+}
+
+.list .last{
+    border-right:0;
+    width:196px;
+}
+
+.clearfix:after {
+	clear:both;
+	content:'\0020';
+	display:block;
+	height:0;    
+}
+
+
+a{
+	color:#333;
+	text-decoration:none;
+}
+
+a:hover {
+    background-color:#390;
+    color:#fff;
+	text-decoration:none;
+}
+
+body {
+    background:#fff;
+    color:#333;
+	font:14px/1.7 Tahoma, Geneva, "\5B8B\4F53";
+}
+
+.main{
+    border-style:solid;
+    border-color:#aad69e;
+    border-width:1px 1px 1px;
+    _zoom:1;
+    z-index:9;
+    position:relative;
+}
+
+ul {
+    padding: 0;
+}
+
+.row {
+    width: 990px;
+    padding-bottom: 2rem;
+    margin: 0 auto;
+}
+
+h2{
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-block-start: .83em;
+  margin-block-end: .83em;
+}
+
+a  > img{
+     width: 25px;
+     height: 25px;
+}
