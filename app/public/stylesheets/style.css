@@ -96,9 +96,9 @@ td.tdEven {
     top: 5rem;
     height: calc(100vh - 5rem);
 }
-.wrapper {
+/*.wrapper {
     position: relative;
-}
+}*/
 .area-main {
     width: 90%;
     padding-left: 10%;
@@ -247,6 +247,7 @@ ul {
     float: left;
 }
 
+.nav-about p,
 #nav-list a {
     text-decoration:none;
     display:block;
@@ -254,6 +255,19 @@ ul {
     color:#fff;    
 }
 
+.nav-about {
+    margin-top: 10px;
+    float: right;
+    margin-right: 10px;
+}
+
+.nav-about p {
+    padding: 0;
+}
+
+.nav-about p:hover {
+    cursor: help;
+}
 h1 {
     float: left;
     text-decoration: none;
@@ -264,4 +278,48 @@ h1 {
 
 #mini-logo {
     display: none;
+}
+
+
+/* for the snackbar */
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 99;
+    left: 50%;
+    bottom: 20px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 20px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 20px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 20px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 20px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
 }
