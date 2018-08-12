@@ -274,10 +274,14 @@ ul {
 }
 
 .table-list img{
-     width: 25px;
-     height: 25px;
+    margin: 5px 0 0;
+    width: 25px;
+    height: 25px;
 }
-
+.table-list img:hover{
+    background-color: none;
+    cursor: pointer;
+}
 /*
  * for the nav bar
  */
@@ -345,11 +349,14 @@ ul {
 .nav-about p:hover {
     cursor: help;
 }
+
 h1 {
-    float: left;
-    text-decoration: none;
-    color: #fff;
-    margin-top: 15px;
+	float: left;
+	text-decoration: none;
+	color: #fff;
+	margin-top: 25px;
+	font-size: 22px;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 
@@ -404,10 +411,10 @@ h1 {
 
 /* for the modal */
 /* The Modal (background) */
-.my-modal {
+.modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 99; /* Sit on top */
+    z-index: 9999; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
@@ -416,23 +423,136 @@ h1 {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    transform: translate(0px, 0px);
+    transition: -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    transition: transform .3s ease-out, -webkit-transform .3s ease-out;
+    -webkit-transform: translate(0, 0);
 }
 
 /* Modal Content */
-.my-content {
+.modal-content {
     background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
+    margin: 0 auto;
+    /*padding: 0 20px;*/
+    max-width: 500px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: .3rem;
+    outline: 0;
+}
+
+.modal-header {
+    /*display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0.5rem;*/
+    border-bottom: 1px solid #e9ecef;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    margin-bottom: 0.5rem;
+    background-color: #f1faed;
+    margin-top: -1rem;}
+
+.modal-title {
+    /*line-height: 1.5;*/
+    margin: 10px 0 0 10px;
+    font-weight: bold;
+    font-size: large;
+    display: inline;
 }
 
 /* The Close Button */
 .close {
     color: #aaaaaa;
     float: right;
-    font-size: 28px;
+    font-size: 18px; 
     font-weight: bold;
+    background-color: transparent;
+    border: 0;
+}
+
+.modal-body {
+	margin: 0 10px;
+}
+
+.modal-lable {
+	font-size: medium;
+}
+
+.modal-header .close {
+    /*! padding: 1rem; */
+    /*margin: -1rem -1rem -1rem auto;*/
+}
+/*.close {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0px 1px 0px #fff;
+    opacity: 0.5;
+}*/
+
+.modal-input {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin-bottom: 1rem;
+}
+
+.modal-footer {
+    /*display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 1rem;*/
+    border-top: 1px solid #e9ecef;
+    margin: 0 -10px;
+    padding: 10px 0;
+}
+.modal-footer > :not(:last-child) {
+    margin-right: 0.25rem;
+}
+
+.btn-close {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    margin: 0 70% auto;
+}
+.btn-submit {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .close:hover,
