@@ -89,26 +89,82 @@ td.tdEven {
     padding-right: 0;
 }*/
 
+.all-screen {
+    width: 100%;
+}
+
 .area-toc {
     width: 10%;
-    float: left;
-    position: sticky;
+    position: fixed;
+    /*float: left;
     top: 5rem;
-    height: calc(100vh - 5rem);
+    height: calc(100vh - 5rem);*/
 }
-/*.wrapper {
-    position: relative;
-}*/
+
+.area-toc a {
+    position: absolute; /* Position them relative to the browser window */
+    left: -95px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    /*padding: 2px; *//* 15px padding */
+    width: 115px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 12px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 2px 2px 0; /* Rounded corners on the top right and bottom right side */
+    text-align: center;
+}
+
+.area-toc a:hover{
+    left: 0;
+}
+
+.area-toc .T_1 {
+    top: 30px;
+    background-color: #76a000;
+}
+.area-toc .T_2 {
+    top: 52px;
+    background-color: #76a000;
+}
+.area-toc .T_3 {
+    top: 74px;
+    background-color: #76a000;
+}
+.area-toc .T_4 {
+    top: 96px;
+    background-color: #76a000;
+}
+.area-toc .T_5 {
+    top: 118px;
+    background-color: #76a000;
+}
+.area-toc .T_6 {
+    top: 140px;
+    background-color: #76a000;
+}
+.area-toc .T_7 {
+    top: 162px;
+    background-color: #76a000;
+}
+.area-toc .T_8 {
+    top: 184px;
+    background-color: #76a000;
+}
+.area-toc .T_9 {
+    top: 206px;
+    background-color: #76a000;
+}
+.area-toc .T_10 {
+    top: 228px;
+    background-color: #76a000;
+}
+
 .area-main {
     width: 90%;
     padding-left: 10%;
 }
 
 /* following is for the new theme */
-li {
-	list-style:none;
-    padding-left: 5px;
-}
 
 .table-title{
     background:#f1faed;
@@ -129,6 +185,11 @@ li {
     margin-bottom:-1px;
 }
 
+.area-toc li,
+.table-list li {
+	list-style:none;
+}
+
 .clearfix {
 	zoom: 1;
 }
@@ -141,6 +202,7 @@ li {
     border-style:solid;
     border-color:#d4eace;
     border-width:0 1px 1px 0;
+    padding-left: 5px;
 }
 
 .table-list .last{
@@ -162,7 +224,7 @@ a{
 }
 
 .table-list a:hover,
-#topics a:hover {
+.area-toc a:hover {
     background-color:#390;
     color:#fff;
 	text-decoration:none;
@@ -214,9 +276,18 @@ ul {
 /*
  * for the nav bar
  */
-.first-bar {
+/*.first-bar {
 	height: 85px;
 	background-color: #124191;
+}*/
+.first-bar {
+	height: 85px;
+	background-color: #76a000;
+	opacity: 0.7;
+	background-image: url(https://mug0.assets-yammer.com/mugshot/images/group-header-messages.png);
+	background-repeat: repeat;
+	background-size: 7%;
+	/* background-blend-mode: overlay; */
 }
 .first-bar img{
     height: 85px;
@@ -233,7 +304,6 @@ ul {
     top: 0;
     z-index: 9999;
 }
-
 .second-bar img {
     height: auto;
     width: 80px;
@@ -322,4 +392,45 @@ h1 {
 @keyframes fadeout {
     from {bottom: 20px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
+}
+/* end for the snackbar */
+
+/* for the modal */
+/* The Modal (background) */
+.my-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 99; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.my-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }

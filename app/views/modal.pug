@@ -1,21 +1,15 @@
-#myModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='myModalLable' aria-hidden='true')
-  .modal-dialog(role='document')
-    .modal-content
-      .modal-header
-        h5#myModalLable.modal-title Add New URL
-        button.close(type='button' data-dismiss='modal' aria-label='Close')
-          span(aria-hidden='true') &times;
-      .modal-body
-        form#form1(method='post')
-          .form-group
-            label.col-form-label(for='tag-name') Tag:
-            input#tag-name.form-control(type='text' placeholder="Couldn't be null or longer than 25.")
-          .form-group
-            label.col-form-label(for='url-name') URL:
-            input#url-name.form-control(type='text' placeholder='http://domain.com')
-          .form-group
-            label.col-form-label(for='added-name') Name:
-            input#added-name.form-control(type='text' placeholder='Your nsn-intra ID')
-          .modal-footer
-            button.btn.btn-secondary(type='button' data-dismiss='modal') Close
-            button.btn.btn-primary(type='submit') Save
+#myModal.my-modal
+  .my-content
+    .my-header
+      h5#myModalLable.my-title Add New URL
+      button#closeWindow.close x
+    .my-body
+      form#form1(method='post')
+        label(for='tag-name') Tag:
+        input#tag-name(placeholder="Couldn't be null or longer than 25." type='text')
+        label(for='url-name') URL:
+        input#url-name(placeholder='http://domain.com' type='text')
+        label(for='added-name') Name:
+        input#added-name(placeholder='Your nsn-intra ID' type='text')
+        button#closeForm(type='button') Close
+        button(type='submit') Save
