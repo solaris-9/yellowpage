@@ -107,22 +107,25 @@ td.tdEven {
 
 .area-toc a {
     position: absolute; /* Position them relative to the browser window */
-    left: -95px; /* Position them outside of the screen */
+    left: -120px; /* Position them outside of the screen */
     transition: 0.3s; /* Add transition on hover */
     /*padding: 2px; *//* 15px padding */
-    width: 115px; /* Set a specific width */
+    width: 140px; /* Set a specific width */
     text-decoration: none; /* Remove underline */
-    font-size: 12px; /* Increase font size */
+    font-size: 15px; /* Increase font size */
     color: white; /* White text color */
     border-radius: 0 2px 2px 0; /* Rounded corners on the top right and bottom right side */
     text-align: center;
+    background-color: #76a000;
+    z-index: 99;
 }
 
 .area-toc a:hover{
     left: 0;
+    z-index: 99;
 }
 
-.area-toc .T_1 {
+/*.area-toc .T_1 {
     top: 30px;
     background-color: #76a000;
 }
@@ -161,7 +164,7 @@ td.tdEven {
 .area-toc .T_10 {
     top: 228px;
     background-color: #76a000;
-}
+}*/
 
 .area-main {
     width: 90%;
@@ -177,11 +180,11 @@ td.tdEven {
     height:40px;
     line-height:40px;
     padding:0 12px;
-    font-size:20px;
+    font-size:18px;
     color:#390;
     margin-top:-1px;
-    position:relative;
-    z-index:10;
+    /*position:relative;
+    z-index:10;*/
     margin-bottom: 0px;
 }
 
@@ -245,8 +248,8 @@ body {
     border-style:solid;
     border-color:#aad69e;
     border-width:1px 1px 1px;
-    z-index:9;
-    position:relative;
+    /*z-index:9;
+    position:relative;*/
 }
 
 ul {
@@ -296,6 +299,7 @@ ul {
 	background-image: url(https://mug0.assets-yammer.com/mugshot/images/group-header-messages.png);
 	background-repeat: repeat;
 	background-size: 7%;
+    overflow: hidden;
 	/* background-blend-mode: overlay; */
 }
 .first-bar img{
@@ -312,6 +316,7 @@ ul {
     width: 100%;
     top: 0;
     z-index: 9999;
+    overflow: hidden;
 }
 .second-bar img {
     height: auto;
@@ -332,7 +337,8 @@ ul {
     text-decoration:none;
     display:block;
     padding:10px 10px;
-    color:#fff;    
+    color:#fff;
+    font-weight: bold;
 }
 
 .nav-about {
@@ -553,6 +559,9 @@ h1 {
     line-height: 1.5;
     border-radius: .25rem;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.btn:hover {
+	cursor: pointer;
 }
 
 .close:hover,

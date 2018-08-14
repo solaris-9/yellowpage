@@ -38,7 +38,7 @@
     ]
   },
   {
-    "name": "General Tools",
+    "name": "Nokia Tools",
     "type": "body",
     "urls": [
       {
@@ -136,7 +136,7 @@
         "url": "https://pronto.int.net.nokia.com/pronto/home.html"
       },
       {
-        "name": "Pronto Improvement",
+        "name": "LogFetch",
         "url": "http://10.182.65.78:8080"
       },
       {
@@ -146,10 +146,6 @@
       {
         "name": "Aginoodle",
         "url": "https://lte.aginoodle.emea.nsn-net.net/"
-      },
-      {
-        "name": "Jira",
-        "url": "https://jira3.int.net.nokia.com/secure/Dashboard.jspa"
       },
       {
         "name": "Fisheye",
@@ -183,6 +179,10 @@
         "name": "Reset iSource Password",
         "url": "https://isource.access.nsn.com/plugins/is_svn_auth/",
         "added": "dzeng"
+      },
+      {
+        "name": "Jira3",
+        "url": "https://jira3.int.net.nokia.com/secure/Dashboard.jspa"
       }
     ]
   },
@@ -257,7 +257,7 @@
     ]
   },
   {
-    "name": "PO and EFS",
+    "name": "PO & EFS",
     "type": "body",
     "urls": [
       {
@@ -363,7 +363,7 @@
     ]
   },
   {
-    "name": "Cpp Programming",
+    "name": "C++ Programming",
     "type": "body",
     "urls": [
       {
@@ -413,7 +413,7 @@
     ]
   },
   {
-    "name": "Python and WWW",
+    "name": "Python & WWW",
     "type": "body",
     "urls": [
       {
@@ -461,25 +461,45 @@
         "url": "https://www.raywenderlich.com/24252/beginning-game-programming-for-teens-with-python"
       },
       {
-        "name": "SpritesGen",
-        "url": "http://css.spritegen.com/"
+        "name": "Navbar Example",
+        "url": "http://jsbin.com/oxajeq/3/edit?html,css,js,output",
+        "added": "dzeng"
+      }
+    ]
+  },
+  {
+    "name": "Programming Tools",
+    "type": "body",
+    "urls": [
+      {
+        "name": "Sublime Editor",
+        "url": "http://www.sublimetext.com"
       },
       {
         "name": "HTML Formatter",
         "url": "https://htmlformatter.com/"
       },
       {
+        "name": "Javascript Beatifier",
+        "url": "http://jsbeautifier.org/",
+        "added": "dzeng"
+      },
+      {
+        "name": "Jsfiddle",
+        "url": "https://jsfiddle.net/",
+        "added": "dzeng"
+      },
+      {
+        "name": "SpritesGen",
+        "url": "http://css.spritegen.com/"
+      },
+      {
         "name": "HTML2Pug",
         "url": "https://html-to-pug.com/"
       },
       {
-        "name": "Navbar Demo",
-        "url": "http://jsbin.com/oxajeq/3/edit?html,css,js,output",
-        "added": "dzeng"
-      },
-      {
-        "name": "Navbar Demo",
-        "url": "http://jsbin.com/oxajeq/3/edit?html,css,js,output",
+        "name": "Nodepad++",
+        "url": "https://notepad-plus-plus.org/",
         "added": "dzeng"
       }
     ]
@@ -557,26 +577,6 @@
       {
         "name": "17Sucai",
         "url": "http://www.17sucai.com"
-      },
-      {
-        "name": "Navbar Demo",
-        "url": "http://jsbin.com/oxajeq/3/edit?html,css,js,output",
-        "added": "dzeng"
-      },
-      {
-        "name": "Navbar Demo",
-        "url": "http://jsbin.com/oxajeq/3/edit?html,css,js,output",
-        "added": "dzeng"
-      },
-      {
-        "name": "Navbar Demo",
-        "url": "http://jsbin.com/oxajeq/3/edit?html,css,js,output",
-        "added": "dzeng"
-      },
-      {
-        "name": "Navbar Demo",
-        "url": "http://jsbin.com/oxajeq/3/edit?html,css,js,output",
-        "added": "dzeng"
       }
     ]
   }
