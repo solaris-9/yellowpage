@@ -124,6 +124,21 @@
       {
         "name": "Travel Approval",
         "url": "https://nokia.sharepoint.com/sites/MN_Travel_Request_Pre-Approval/Lists/MN%204GRAN%20Travel%20Request%20PreApproval/AllItems.aspx"
+      },
+      {
+        "name": "CES",
+        "url": "http://viz.eecloud.dynamic.nsn-net.net/",
+        "added": "ruibz"
+      },
+      {
+        "name": "Power BI - Dashboard",
+        "url": "https://app.powerbi.com/groups/me/apps/7235a662-5d10-4549-92ad-0f016f862a6c/reports/ed0949db-1d04-440d-8e8b-96ddec24dbce/ReportSectionbd72c261505db827e17c?redirectedFromSignup=1&ctid=5d471751-9675-428d-917b-70f44f9630b0",
+        "added": "junxingw"
+      },
+      {
+        "name": "Sharenet(obsolete soon)",
+        "url": "https://sharenet-ims.int.net.nokia.com/livelink/livelink?func=llworkspace",
+        "added": "dzeng"
       }
     ]
   },
@@ -136,12 +151,16 @@
         "url": "https://pronto.int.net.nokia.com/pronto/home.html"
       },
       {
-        "name": "LogFetch",
+        "name": "Pronto Improvment",
         "url": "http://10.182.65.78:8080"
       },
       {
         "name": "C-Plane Pronto",
         "url": "https://prontos.dynamic.nsn-net.net/"
+      },
+      {
+        "name": "Trace Level Tool",
+        "url": "http://10.182.70.27:8082/"
       },
       {
         "name": "Aginoodle",
@@ -168,10 +187,6 @@
         "url": "http://esnidd053.emea.nsn-net.net/NIDD/"
       },
       {
-        "name": "Trace Level Tool",
-        "url": "http://10.182.70.27:8082/"
-      },
-      {
         "name": "clang-tools-extra",
         "url": "https://gitlab.dynamic.nsn-net.net/clang/clang-tools-extra"
       },
@@ -183,6 +198,11 @@
       {
         "name": "Jira3",
         "url": "https://jira3.int.net.nokia.com/secure/Dashboard.jspa"
+      },
+      {
+        "name": "Doors",
+        "url": "https://citrixapps.int.net.nokia.com/Citrix/XenApp/site/default.aspx",
+        "added": "dzeng"
       }
     ]
   },
@@ -253,6 +273,11 @@
       {
         "name": "Midori(MSG ID)",
         "url": "https://midori.emea.nsn-net.net/#login"
+      },
+      {
+        "name": "Jenkins ISAR",
+        "url": "http://wrlinb170.emea.nsn-net.net:9000/",
+        "added": "lgzhao"
       }
     ]
   },
@@ -271,14 +296,6 @@
       {
         "name": "Gates",
         "url": "https://gates.nsn-net.net/"
-      },
-      {
-        "name": "FBP",
-        "url": "https://sharenet-ims.int.net.nokia.com/Open/413273451"
-      },
-      {
-        "name": "SPP",
-        "url": "https://sharenet-ims.int.net.nokia.com/Open/435470858"
       },
       {
         "name": "LBT",
@@ -303,6 +320,16 @@
       {
         "name": "Doctor",
         "url": "https://doctor.int.net.nokia.com/nsn/jsp/default.jsp"
+      },
+      {
+        "name": "FUSION - JiraDC",
+        "url": "https://jiradc.int.net.nokia.com/secure/Dashboard.jspa",
+        "added": "liweid"
+      },
+      {
+        "name": "FB exit / entry",
+        "url": "https://jiradc.int.net.nokia.com/secure/Dashboard.jspa?selectPageId=59591",
+        "added": "liweid"
       }
     ]
   },
@@ -454,7 +481,7 @@
       },
       {
         "name": "Crucible API",
-        "url": "https://confluence.atlassian.com/display/CRUCIBLE022/Crucible+REST+API+Usage+Example"
+        "url": "https://developer.atlassian.com/server/fisheye-crucible/rest-api-guide/"
       },
       {
         "name": "Bunny",
@@ -577,6 +604,11 @@
       {
         "name": "17Sucai",
         "url": "http://www.17sucai.com"
+      },
+      {
+        "name": "SAFe Community",
+        "url": "https://community.scaledagile.com/s/",
+        "added": "dzeng"
       }
     ]
   }

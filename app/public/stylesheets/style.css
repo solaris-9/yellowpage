@@ -115,7 +115,8 @@ td.tdEven {
     font-size: 15px; /* Increase font size */
     color: white; /* White text color */
     border-radius: 0 2px 2px 0; /* Rounded corners on the top right and bottom right side */
-    text-align: center;
+    text-align: right;
+    padding-right: 5px;
     background-color: #76a000;
     z-index: 99;
 }
@@ -123,6 +124,8 @@ td.tdEven {
 .area-toc a:hover{
     left: 0;
     z-index: 99;
+    text-align: center;
+    padding-right: 0;
 }
 
 /*.area-toc .T_1 {
@@ -190,6 +193,7 @@ td.tdEven {
 
 .table-list{
     margin-bottom:-1px;
+    margin-top: 0;
 }
 
 .area-toc li,
@@ -214,7 +218,8 @@ td.tdEven {
 
 .table-list .last{
     border-right:0;
-    width:196px;
+    width:199px;
+    margin-right: 0;
 }
 
 .clearfix:after {
@@ -296,7 +301,7 @@ ul {
 	height: 85px;
 	background-color: #76a000;
 	opacity: 0.7;
-	background-image: url(https://mug0.assets-yammer.com/mugshot/images/group-header-messages.png);
+	background-image: url(/images/header.png);
 	background-repeat: repeat;
 	background-size: 7%;
     overflow: hidden;
@@ -321,6 +326,7 @@ ul {
 .second-bar img {
     height: auto;
     width: 80px;
+    margin-bottom: -2px;
 }
 
 #nav-list {
